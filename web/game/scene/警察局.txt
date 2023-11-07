@@ -1,0 +1,6 @@
+changeBg:警察局.jpg;
+intro:李晓明逃出后，来到了警察局，向张警官揭露了传销组织的阴谋。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+changeFigure:è­¦å¯.png;
+张警官:好的，我们会采取行动的。谢谢你提供的信息。 -fontSize=default;
+intro:在李晓明的帮助下，经过警方的努力，这个传销组织被全员抓获。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+end;

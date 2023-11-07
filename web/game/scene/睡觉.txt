@@ -1,0 +1,4 @@
+changeBg:黑背景.jpg;
+changeFigure:学生.png;
+李晓明:我不能相信王老板，我要趁现在大家都在睡觉，想办法逃出去。|那个窗户应该可以翻出去！ -fontSize=default;
+changeScene:逃出窗户.txt

@@ -1,0 +1,6 @@
+changeBg:传销讲课.jpg;
+changeFigure:老师.png;
+王老板:晓明，你看，只要加入我们，你也可以实现自己的梦想，过上富裕的生活。 -fontSize=default;
+changeFigure:学生.png;
+李晓明:（假装感兴趣）：听起来不错，我会考虑的。 -fontSize=default;
+changeScene:睡觉.txt

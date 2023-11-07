@@ -1,0 +1,4 @@
+changeBg:废品站.jpg;
+changeFigure:学生.png;
+李晓明:啊终于跳出来了，我要找找出去的路，出去报警！|找到了！一面墙，翻过墙我就能逃出去了！ -fontSize=default;
+changeScene:警察局.txt
