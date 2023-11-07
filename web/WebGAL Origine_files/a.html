@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-Hans"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="http://localhost:3001/games/%E6%88%91%E7%9A%84%E6%B8%B8%E6%88%8F/assets/favicon.a0f5bb8c.ico">
+  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+  <title>逃出生天</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <script type="module" crossorigin="" src="a_data/index.9a5985bf.js"></script>
+  <link rel="stylesheet" href="a_data/index.2a7077fa.css">
+<link type="text/css" rel="stylesheet" href="a_data/userStyleSheet.css"><link rel="prefetch" href="a_data/s_Title.mp3"><link rel="prefetch" href="http://localhost:3001/games/%E6%88%91%E7%9A%84%E6%B8%B8%E6%88%8F/game/background/%E4%BC%A0%E9%94%80%E6%88%BF%E9%97%B4.jpg"><link rel="prefetch" href="http://localhost:3001/games/%E6%88%91%E7%9A%84%E6%B8%B8%E6%88%8F/game/figure/%E5%AD%A6%E7%94%9F.png"><link rel="prefetch" href="http://localhost:3001/games/%E6%88%91%E7%9A%84%E6%B8%B8%E6%88%8F/game/background/%E4%BC%A0%E9%94%80%E8%AE%B2%E8%AF%BE.jpg"><link rel="prefetch" href="http://localhost:3001/games/%E6%88%91%E7%9A%84%E6%B8%B8%E6%88%8F/game/figure/%E8%80%81%E5%B8%88.png"><link rel="prefetch" href="http://localhost:3001/games/%E6%88%91%E7%9A%84%E6%B8%B8%E6%88%8F/game/background/%E9%BB%91%E8%83%8C%E6%99%AF.jpg"><link rel="prefetch" href="http://localhost:3001/games/%E6%88%91%E7%9A%84%E6%B8%B8%E6%88%8F/game/background/%E5%BA%9F%E5%93%81%E7%AB%99.jpg"><link rel="prefetch" href="http://localhost:3001/games/%E6%88%91%E7%9A%84%E6%B8%B8%E6%88%8F/game/background/%E8%AD%A6%E5%AF%9F%E5%B1%80.jpg"><link rel="prefetch" href="http://localhost:3001/games/%E6%88%91%E7%9A%84%E6%B8%B8%E6%88%8F/game/figure/%C3%A8%C2%AD%C2%A6%C3%A5%C2%AF%C2%9F.png"></head>
+<body>
+<!--快速显示落地页，让用户感知不到加载的过程-->
+<div id="ebg" style="height: 100vh; width: 100vw; background-image: url(&quot;./game/background/警察局.jpg&quot;);"></div>
+<div id="Title_enter_page" onclick="enter()" style="width: 2560px; height: 1440px; overflow: hidden; position: absolute; top: 0px; z-index: 14; opacity: 0; transition: opacity 1.5s ease 0s; transform: translate(-1056px, -594px) scale(0.175); pointer-events: none; background: linear-gradient(rgb(161, 196, 253) 0%, rgb(194, 233, 251) 100%); display: none;">
+  <!--    落地页背景-->
+  <div id="Title_bg_container" style="height: 100%; width: 100%; position: absolute; background: linear-gradient(135deg, rgb(253, 251, 251) 0%, rgb(235, 237, 238) 100%); top: 0px; opacity: 0; transition: opacity 1s ease 0s;"></div>
+  <!--    点击后的白色渐变-->
+  <div id="Title_white_container" style="width: 100%; height: 100%; position: absolute; top: 0px; opacity: 1; background: linear-gradient(165deg, rgba(255, 255, 255, 0.25) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0.25) 100%); transition: opacity 1s ease 0s;"></div>
+  <!--    落地页文字-->
+  <div id="Title_enter_text" style="width: 100%; position: absolute; top: 0px; height: 100%; opacity: 0; font-size: 175%; transition: opacity 1s ease 0s; z-index: 15; font-family: &quot;思源宋体&quot;, Georgia, serif;">
+    <div class="toCenter" style="
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+">
+      <div class="StartButton" style="
+            letter-spacing: 0.25em ;
+            padding: 2em 2em 2em 2em;
+            text-shadow: 0 0 30px rgba(0,0,0,0.5);
+            transition: text-shadow 1s;
+            font-size: 175%;
+">
+        PRESS THE SCREEN TO START
+      </div>
+    </div>
+    <div style="position: absolute;
+        bottom: 1em;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-flow: column;
+        align-items: center ">
+      <div style="padding: 0 0 0.25em 0">
+        Powered by <a href="https://github.com/MakinoharaShoko/WebGAL" onclick="jump(event, 'https://github.com/MakinoharaShoko/WebGAL')">WebGAL</a> Framework
+      </div>
+      <div>
+        Made with ❤ by <a href="https://github.com/MakinoharaShoko" onclick="jump(event, 'https://github.com/MakinoharaShoko')">Mahiru</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="panic-overlay"> <!-- 紧急回避 --> <div class=""></div></div>
+<div id="root" style="transform: translate(-1056px, -594px) scale(0.175);"><div class="App"><div class="_MainStage_main_9enex_1"><div class="_FullScreenPerform_main_7er8a_2" style="width: 100%; height: 100%; top: 0px;"><div id="videoContainer"></div></div><div style="display: none;"></div><div id="pixiContianer" class="_pixiContainer_9enex_72"><canvas style="touch-action: none; position: absolute; display: block; cursor: inherit;" width="2560" height="1440" id="pixiCanvas"></canvas></div><div id="chooseContainer" class="_chooseContainer_9enex_77"></div><div><audio id="currentBgm" src="a_data/s_Title.mp3" loop="" autoplay="autoplay"></audio><audio id="currentVocal" src="a.html"></audio></div><div id="FullScreenClick" style="width: 100%; height: 100%; position: absolute; z-index: 12; top: 0px;"></div><div class="_introContainer_119k8_1" id="introContainer" style="display: none;"><div style="background: rgb(0, 0, 0); color: rgb(255, 255, 255); font-size: 350%; width: 100%; height: 100%;"><div style="padding: 3em 4em;"><div style="animation-delay: 0ms;" class="_fadeIn_7er8a_74">在李晓明的帮助下，经过警方的努力，这个传销组织被全员抓获。</div></div></div></div></div><div class="_main_15mmi_1"><span class="_singleButton_15mmi_42" style="font-size: 150%;"><span class="i-icon i-icon-preview-close-one _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M9.85786 18C6.23858 21 4 24 4 24C4 24 12.9543 36 24 36C25.3699 36 26.7076 35.8154 28 35.4921M20.0318 12.5C21.3144 12.1816 22.6414 12 24 12C35.0457 12 44 24 44 24C44 24 41.7614 27 38.1421 30" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20.3142 20.6211C19.4981 21.5109 19 22.6972 19 23.9998C19 26.7612 21.2386 28.9998 24 28.9998C25.3627 28.9998 26.5981 28.4546 27.5 27.5705" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M42 42L6 6" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="_button_text_15mmi_23">隐藏</span></span><span class="_singleButton_15mmi_42" style="font-size: 150%;"><span class="i-icon i-icon-align-text-left-one _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M39 6H9C7.34315 6 6 7.34315 6 9V39C6 40.6569 7.34315 42 9 42H39C40.6569 42 42 40.6569 42 39V9C42 7.34315 40.6569 6 39 6Z" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linejoin="round"></path><path d="M26 24H14" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M34 15H14" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M32 33H14" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="_button_text_15mmi_23">回想</span></span><span class="_singleButton_15mmi_42" style="font-size: 150%;"><span class="i-icon i-icon-replay-music _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M21 24V18L26 21L31 24L26 27L21 30V24Z" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linejoin="round"></path><path d="M11.2721 36.7279C14.5294 39.9853 19.0294 42 24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C19.0294 6 14.5294 8.01472 11.2721 11.2721C9.6141 12.9301 6 17 6 17" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 9V17H14" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="_button_text_15mmi_23">重播</span></span><span id="Button_ControlPanel_auto" class="_singleButton_15mmi_42" style="font-size: 150%;"><span class="i-icon i-icon-play-one _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M15 24V11.8756L25.5 17.9378L36 24L25.5 30.0622L15 36.1244V24Z" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linejoin="round"></path></svg></span><span class="_button_text_15mmi_23">自动</span></span><span id="Button_ControlPanel_fast" class="_singleButton_15mmi_42" style="font-size: 150%;"><span class="i-icon i-icon-double-right _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M12 12L24 24L12 36" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24 12L36 24L24 36" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="_button_text_15mmi_23">快进</span></span><span class="_singleButton_15mmi_42 _fastsave_15mmi_73" style="font-size: 150%;"><span class="i-icon i-icon-double-down _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M36 12L24 24L12 12" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M36 24L24 36L12 24" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="_button_text_15mmi_23">快速存档</span><div class="_fastSlPreview_15mmi_59 _fastSPreview_15mmi_73"><div style="height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;"><div style="font-size: 125%;">暂无存档</div></div></div></span><span class="_singleButton_15mmi_42 _fastload_15mmi_77" style="font-size: 150%;"><span class="i-icon i-icon-double-up _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M12 24L24 12L36 24" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 36L24 24L36 36" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="_button_text_15mmi_23">快速读档</span><div class="_fastSlPreview_15mmi_59 _fastLPreview_15mmi_77"><div style="height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;"><div style="font-size: 125%;">暂无存档</div></div></div></span><span class="_singleButton_15mmi_42" style="font-size: 150%;"><span class="i-icon i-icon-save _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M6 9C6 7.34315 7.34315 6 9 6H34.2814L42 13.2065V39C42 40.6569 40.6569 42 39 42H9C7.34315 42 6 40.6569 6 39V9Z" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24.0083 6L24 13.3846C24 13.7245 23.5523 14 23 14H15C14.4477 14 14 13.7245 14 13.3846L14 6" fill="none"></path><path d="M24.0083 6L24 13.3846C24 13.7245 23.5523 14 23 14H15C14.4477 14 14 13.7245 14 13.3846L14 6H24.0083Z" stroke="#f5f5f7" stroke-width="2.5" stroke-linejoin="round"></path><path d="M9 6H34.2814" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 26H34" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 34H24.0083" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="_button_text_15mmi_23">存档</span></span><span class="_singleButton_15mmi_42" style="font-size: 150%;"><span class="i-icon i-icon-folder-open _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M4 9V41L9 21H39.5V15C39.5 13.8954 38.6046 13 37.5 13H24L19 7H6C4.89543 7 4 7.89543 4 9Z" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M40 41L44 21H8.8125L4 41H40Z" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="_button_text_15mmi_23">读档</span></span><span class="_singleButton_15mmi_42" style="font-size: 150%;"><span class="i-icon i-icon-setting-two _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M18.2838 43.1713C14.9327 42.1736 11.9498 40.3213 9.58787 37.867C10.469 36.8227 11 35.4734 11 34.0001C11 30.6864 8.31371 28.0001 5 28.0001C4.79955 28.0001 4.60139 28.01 4.40599 28.0292C4.13979 26.7277 4 25.3803 4 24.0001C4 21.9095 4.32077 19.8938 4.91579 17.9995C4.94381 17.9999 4.97188 18.0001 5 18.0001C8.31371 18.0001 11 15.3138 11 12.0001C11 11.0488 10.7786 10.1493 10.3846 9.35011C12.6975 7.1995 15.5205 5.59002 18.6521 4.72314C19.6444 6.66819 21.6667 8.00013 24 8.00013C26.3333 8.00013 28.3556 6.66819 29.3479 4.72314C32.4795 5.59002 35.3025 7.1995 37.6154 9.35011C37.2214 10.1493 37 11.0488 37 12.0001C37 15.3138 39.6863 18.0001 43 18.0001C43.0281 18.0001 43.0562 17.9999 43.0842 17.9995C43.6792 19.8938 44 21.9095 44 24.0001C44 25.3803 43.8602 26.7277 43.594 28.0292C43.3986 28.01 43.2005 28.0001 43 28.0001C39.6863 28.0001 37 30.6864 37 34.0001C37 35.4734 37.531 36.8227 38.4121 37.867C36.0502 40.3213 33.0673 42.1736 29.7162 43.1713C28.9428 40.752 26.676 39.0001 24 39.0001C21.324 39.0001 19.0572 40.752 18.2838 43.1713Z" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linejoin="round"></path><path d="M24 31C27.866 31 31 27.866 31 24C31 20.134 27.866 17 24 17C20.134 17 17 20.134 17 24C17 27.866 20.134 31 24 31Z" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linejoin="round"></path></svg></span><span class="_button_text_15mmi_23">选项</span></span><span class="_singleButton_15mmi_42" style="font-size: 150%;"><span class="i-icon i-icon-home _button_15mmi_16"><svg width="42" height="42" viewBox="0 0 48 48" fill="none"><path d="M9 18V42H39V18L24 6L9 18Z" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19 29V42H29V29H19Z" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linejoin="round"></path><path d="M9 42H39" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round"></path></svg></span><span class="_button_text_15mmi_23">标题</span></span></div><div class="
+          _Backlog_main_out_zwyao_15
+          _Backlog_main_out_IndexHide_zwyao_28
+          "><div class="_backlog_top_zwyao_36"><span class="i-icon i-icon-close-small _backlog_top_icon_zwyao_42"><svg width="4em" height="4em" viewBox="0 0 48 48" fill="none"><path d="M14 14L34 34" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 34L34 14" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><div class="_backlog_title_zwyao_62">回想</div></div></div><div class="_Title_backup_background_13knx_58"></div><div id="enter_game_target"></div><div class="_Title_main_13knx_2" style="background-image: url(&quot;./game/background/é»èæ¯.jpg&quot;); background-size: cover;"><div class="_Title_buttonList_13knx_9"><div class="_Title_button_13knx_9"><div class="_Title_button_text_13knx_43 _Title_button_text_up_13knx_52">开始游戏</div></div><div class="_Title_button_13knx_9"><div class="_Title_button_text_13knx_43 _Title_button_text_up_13knx_52">继续游戏</div></div><div class="_Title_button_13knx_9"><div class="_Title_button_text_13knx_43 _Title_button_text_up_13knx_52">游戏选项</div></div><div class="_Title_button_13knx_9"><div class="_Title_button_text_13knx_43 _Title_button_text_up_13knx_52">读取存档</div></div><div class="_Title_button_13knx_9"><div class="_Title_button_text_13knx_43 _Title_button_text_up_13knx_52">鉴赏模式</div></div></div></div></div></div>
+<script>
+  /**
+   * 在窗口大小改变时进行强制缩放
+   */
+  function resize() {
+    const targetHeight = 1440;
+    const targetWidth = 2560;
+
+    const h = window.innerHeight; // 窗口高度
+    const w = window.innerWidth; // 窗口宽度
+    const zoomH = h / targetHeight; // 以窗口高度为基准的变换比
+    const zoomW = w / targetWidth; // 以窗口宽度为基准的变换比
+    const zoomH2 = w / targetHeight; // 竖屏时以窗口高度为基础的变换比
+    const zoomW2 = h / targetWidth; // 竖屏时以窗口宽度为基础的变换比
+    let mh = (targetHeight - h) / 2; // y轴移动距离
+    let mw = (targetWidth - w) / 2; // x轴移动距离
+    let mh2os = targetWidth / 2 - w / 2; // 竖屏时 y轴移动距离
+    let mw2os = targetHeight / 2 - h / 2; // 竖屏时 x轴移动距离
+    let transform = '';
+    let ebgTransform = '';
+    const root = document.getElementById('root'); // 获取根元素
+    const title = document.getElementById('Title_enter_page');
+    const ebg = document.getElementById('ebg');
+    const elements = [root, title];
+    if (w > h) {
+      const ebg = document.getElementById('ebg');
+      if (ebg) {
+        ebg.style.height = `100vh`;
+        ebg.style.width = `100vw`;
+        ebgTransform = '';
+      }
+      mw = -mw;
+      mh = -mh;
+      if (w * (9 / 16) >= h) {
+        transform = `translate(${mw}px, ${mh}px) scale(${zoomH},${zoomH})`;
+      }
+      if (w * (9 / 16) < h) {
+        transform = `translate(${mw}px, ${mh}px) scale(${zoomW},${zoomW})`;
+      }
+    } else {
+      /**
+       * 旋转
+       */
+      if (ebg) {
+        ebg.style.height = `${targetHeight}px`;
+        ebg.style.width = `${targetWidth}px`;
+      }
+      mw2os = -mw2os;
+      if (h * (9 / 16) >= w) {
+        ebgTransform = `rotate(90deg) translate(${mw2os}px, ${mh2os}px) scale(${zoomH2 * 1.75},${zoomH2 * 1.75})`;
+        transform = `rotate(90deg) translate(${mw2os}px, ${mh2os}px) scale(${zoomH2},${zoomH2})`;
+      }
+      if (h * (9 / 16) < w) {
+        ebgTransform = `rotate(90deg) translate(${mw2os}px, ${mh2os}px) scale(${zoomW2 * 1.75},${zoomW2 * 1.75})`;
+        transform = `rotate(90deg) translate(${mw2os}px, ${mh2os}px) scale(${zoomW2},${zoomW2})`;
+      }
+    }
+    if (ebg) {
+      ebg.style.transform = ebgTransform;
+    }
+    for (const element of elements) {
+      if (element) {
+        element.style.transform = transform;
+      }
+    }
+  }
+
+  resize();
+  window.onload = resize;
+  window.onresize = resize;
+  // 监听键盘 F11 事件，全屏时触发页面调整
+  document.onkeydown = function (event) {
+    const e = event;
+    if (e && e.key === 'F11') {
+      setTimeout(() => {
+        resize();
+      }, 100);
+    }
+  };
+
+</script>
+<script>
+  /**
+   * 注册 Service Worker
+   */
+  const u = navigator.userAgent;
+  const isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); // 判断是否是 iOS终端
+  if ("serviceWorker" in navigator && !isIOS) {
+    navigator.serviceWorker.register("./webgal-serviceworker.js").then(function (reg) {
+      // registration worked
+      console.log("Registration succeeded. Scope is " + reg.scope);
+    }).catch(function (error) {
+      // registration failed
+      console.log("Registration failed with " + error);
+    });
+  }
+</script>
+
+<!--<script type="module" src="/src/Core/util/resize.ts"></script>-->
+<!--<script src="/src/assets/lib/l2d.js"></script>-->
+<!--<script src="/src/assets/lib/live2dcubismcore.min.js"></script>-->
+<script>
+  let enterPromise = new Promise(res => window.enterPromise = res);
+  let renderPromise = new Promise(res => window.renderPromise = res);
+  /**
+   * 将播放bgm的事件发送出去
+   */
+  Promise.all([enterPromise, renderPromise]).then(() => {
+    const event = new MouseEvent("click", {
+      "view": window,
+      "bubbles": true,
+      "cancelable": true
+    });
+    const target = document.getElementById("enter_game_target");
+    if (target) {
+      target.dispatchEvent(event);
+    }
+    if (event) {
+      const logo = document.getElementById("logo_target");
+      if (logo) {
+        logo.style.display = "contents";
+      }
+    }
+  });
+
+  function jump(event, url) {
+    // 获取点击事件，阻止点击事件冒泡触发 `enter` 事件
+    event.stopPropagation();
+    // window.location = url;
+  }
+
+  /**
+   * 点击屏幕，进入引擎主界面
+   */
+  function enter() {
+    const bgContainer = document.getElementById("Title_bg_container");
+    if (bgContainer) {
+      bgContainer.style.opacity = "0"; // 调整标题背景的透明度
+    }
+    const enterText = document.getElementById("Title_enter_text");
+    if (enterText) {
+      enterText.style.opacity = "0"; // 调整标题文字的透明度
+    }
+    const whiteContainer = document.getElementById("Title_white_container");
+    setTimeout(() => {
+      if (whiteContainer) {
+        whiteContainer.style.opacity = "1";
+      }
+    }, 50); // 在50ms后开始显示白色渐变
+    const title = document.getElementById("Title_enter_page");
+    setTimeout(() => {
+      if (title)
+        title.style.opacity = "0";
+    }, 500); //500ms后开始降低落地页透明度
+    if (!isIOS && title) {
+      title.style.pointerEvents = "none"; //落地页不再响应点击
+      title.style.background = "linear-gradient( #a1c4fd 0%, #c2e9fb 100%)"; //改变标题渐变效果
+    }
+    setTimeout(() => {
+      if (title) {
+        title.style.display = "none";
+      }
+    }, 2000); // 将落地页设置为不显示
+    window.enterPromise();
+    delete window.enterPromise;
+  }
+</script>
+
+
+</body></html>
