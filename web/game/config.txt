@@ -1,5 +1,5 @@
-Game_name:欢迎使用WebGAL！;
+Game_name:逃出生天;
 Game_key:163ead71c68176e;
-Package_name:;
+Package_name:逃出生天;
 Title_bgm:s_Title.mp3;
-Title_img:WebGAL_New_Enter_Image.png;
+Title_img:é»èæ¯.jpg;
