@@ -13,10 +13,10 @@
                 "media": {
                     "caption": "",
                     "credit": "",
-                    "url": "https://th.bing.com/th/id/R.42d76866574b35274ec7a0f33c6d268d?rik=2nxpdI5QcyC%2fSQ&pid=ImgRaw&r=0"
+                    "url": "https://dgrzgrgz.oss-ap-southeast-1.aliyuncs.com/Snipaste_2023-11-08_13-52-29.jpg"
                 },
                 "text": {
-                    "headline": "苏轼和他的美食",
+                    "headline": "河海名景",
                     "text": "基于地图的交互叙事作品"
                 },
                 "type": "overview"
@@ -32,11 +32,11 @@
                 "media": {
                     "caption": "",
                     "credit": "",
-                    "url": "https://bucketdemo2023.oss-ap-southeast-1.aliyuncs.com/01.mp4"
+                    "url": "https://dgrzgrgz.oss-ap-southeast-1.aliyuncs.com/%E6%89%BF%E5%BE%B7%E5%B1%B1%E5%BA%84.jpg"
                 },
                 "text": {
-                    "headline": "羊蝎子",
-                    "text": "说明文字"
+                    "headline": "河北——承德避暑山庄",
+                    "text": "承德避暑山庄，又名“承德离宫”或“热河行宫”，位于河北省承德市双桥区山庄东路6号。 承德避暑山庄清康熙四十二年（1703年）开始大规模修建， 是中国清朝皇帝为了实现安抚、团结中国边疆少数民族，巩固国家统一的政治目的而修建的一座夏宫。1994年12月，承德避暑山庄及其周围寺庙被联合国教科文组织列为世界文化遗产。 2007年，承德避暑山庄被评为国家AAAAA级景区。"
                 }
             },
             {
@@ -48,13 +48,13 @@
                     "zoom": 8
                 },
                 "media": {
-                    "caption": "图片标题",
+                    "caption": "",
                     "credit": "",
-                    "url": "https://bucketdemo2023.oss-ap-southeast-1.aliyuncs.com/OIP.jpg"
+                    "url": "https://dgrzgrgz.oss-ap-southeast-1.aliyuncs.com/%E4%B8%89%E4%BA%9A.jpg"
                 },
                 "text": {
-                    "headline": "事件二",
-                    "text": "事件说明"
+                    "headline": "海南——三亚亚龙湾热带天堂森林公园",
+                    "text": "亚龙湾热带天堂森林公园位于中国唯一的热带滨海城市海南省三亚市亚龙湾国家旅游度假区，园区定位于国际一流的滨海山地生态观光兼生态度假型森林公园，植被类型为热带常绿性雨林和热带半落叶季雨林。其生物、地理、天象、水文、人文资源丰富多彩，景观建设极尽生态自然，可开展登山探险、野外拓展、休闲观光、养生度假、科普教育、民俗文化体验等多种旅游活动。海南省是中国第一个生态省，而“热带天堂”就是离城市最近的天然森林氧吧。"
                 }
             }
         ]
